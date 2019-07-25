@@ -1,0 +1,34 @@
+{
+  "name": "friend-finder-today",
+  "version": "1.0.0",
+  "description": "An app for finding friends",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "6.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phpatel662/friend-finder-today.git"
+  },
+  "keywords": [
+    "friend-finder",
+    "friend-match",
+    "compatibility"
+  ],
+  "author": "Payal Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phpatel662/friend-finder-today/issues"
+  },
+  "homepage": "https://github.com/phpatel662/friend-finder-today#readme"
+}
