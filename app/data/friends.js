@@ -162,4 +162,6 @@ var friendsArray = [
 	}
 ];
 
-module.exports = friendsArray;
+module.exports = {
+    friends: friends,
+};
