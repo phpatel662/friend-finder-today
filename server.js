@@ -1,26 +1,20 @@
-// Pull in required dependencies
-var express = require('express');
-var bodyParser = require('body-parser');
-var path = require('path');
-
-// Configure the Express application
+// Dependencies
+require('dotenv').config();
+var express = require("express");
+var api = require("./app/routing/apiRoutes");
+var html = require("./app/routing/htmlRoutes");
+// Sets up the Express App
 var app = express();
-var PORT = process.env.PORT;
+let PORT = process.env.PORT;
 
-// Expose the public directory to access CSS files
-app.use(express.static(path.join(__dirname, './app/public')));
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-// Add middleware for parsing incoming request bodies
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.text());
+api(app);
+html(app);
 
-// Add the application routes
-require(path.join(__dirname, './app/routing/apiRoutes'))(app);
-require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
-
-// Start listening on PORT
 app.listen(PORT, function() {
-  console.log('Is listening on PORT: ' + PORT);
+    console.log("Server listening on " + PORT);
 });
 

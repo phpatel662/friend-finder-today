@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="UTF-8">
-        <title>Friend Finder Today</title>
+        <title>Friend Finder</title>
 
         <!-- bootstrap + jquery -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -47,7 +47,7 @@
 
 
         <h3><strong>Question 3</strong></h3>
-        <h4>You've never missed anyone.</h4>
+        <h4>You've never murdered anyone.</h4>
         <select class="chosen-select" id="q3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -71,7 +71,7 @@
 
 
         <h3><strong>Question 5</strong></h3>
-        <h4>You like politics.</h4>
+        <h4>You like to teach children about science.</h4>
         <select class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -83,7 +83,7 @@
 
 
         <h3><strong>Question 6</strong></h3>
-        <h4>You are a big fan of Drake.</h4>
+        <h4>You are a big fan of Chris Brown.</h4>
         <select class="chosen-select" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -95,7 +95,7 @@
 
 
         <h3><strong>Question 7</strong></h3>
-        <h4>You really want to hang out with Bill Clinton</h4>
+        <h4>You really want to hang out with Bill Murray</h4>
         <select class="chosen-select" id="q7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -117,7 +117,7 @@
         </select>
 
         <h3><strong>Question 9</strong></h3>
-        <h4>You enjoy talking with children</h4>
+        <h4>You enjoy talking about politics.</h4>
         <select class="chosen-select" id="q9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -147,7 +147,7 @@
         <footer class='footer'>
                 <div class='container'>
                     <p>
-                        <a href='app/data/friends.js'>Friends API List</a> | <a href='https://github.com/phpatel662/friend-finder-today'>GitHub</a>
+                        <a href='/api/friends'>Friends API List</a> | <a href='https://github.com/phpatel662/friend-finder-today'>GitHub Repository</a>
                     </p>
                 </div>
         </footer>
@@ -177,6 +177,7 @@
     <script>
       $("#submit").on("click", function(event) {
       event.preventDefault();
+
         // Form validation
         function validateForm() {
             var isValid = true;
@@ -185,7 +186,9 @@
                 isValid = false;
             }
             });
+
             $(".chosen-select").each(function() {
+
             if ($(this).val() === "") {
                 isValid = false;
             }
@@ -217,6 +220,7 @@
                 // Grab the result from the AJAX post so that the best match's name and photo are displayed.
                 $("#match-name").text(data.name);
                 $("#match-img").attr("src", data.photo);
+
                 // Show the modal with the best match
                 $("#results-modal").modal("toggle");
                 });
