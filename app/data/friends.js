@@ -16,8 +16,8 @@ var friends = [
         ]
     },
     {
-        name: "O.J. Simpson",
-        photo: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTE5NDg0MDU1MTI5NDU4MTkx/orenthal-james-simpson-9484729-1-402.jpg",
+        name: "Kim Kardashian",
+        photo: "https://images.law.com/contrib/content/uploads/sites/292/2019/04/Kim-Kardashian-Article-201904101752.jpg",
         scores: [
             2,
             4,
@@ -48,8 +48,8 @@ var friends = [
         ]
     },
     {
-        name: "Rihanna",
-        photo: "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTQzMzAxNjY1OTcyMjk5MzM1/rihanna_gettyimages-533588672jpg.jpg",
+        name: "Winnie the Pooh",
+        photo: "https://i2-prod.mirror.co.uk/incoming/article13873867.ece/ALTERNATES/s615/0_Winnie-The-Pooh-Animation.jpg",
         scores: [
             4,
             1,
@@ -64,8 +64,8 @@ var friends = [
         ]
     },
     {
-        name: "Bill Murray",
-        photo: "https://pbs.twimg.com/profile_images/650100474226458625/-nngF2Y1.jpg",
+        name: "Drake",
+        photo: "https://imagez.tmz.com/image/f8/o/2018/06/29/f8e9f4ad69315a53b4afe6b154164316_md.jpg",
         scores: [
             5,
             2,
@@ -80,8 +80,8 @@ var friends = [
         ]
     },
     {
-        name: "Bobby Hill",
-        photo: "https://vignette.wikia.nocookie.net/kingofthehill/images/c/c7/Bobby.png/revision/latest?cb=20150524012917",
+        name: "Angelina Jolie",
+        photo: "https://s1.r29static.com//bin/entry/5ee/680x816,80/2228031/angelina-jolie-is-officially-joining-2228031.jpg",
         scores: [
             1,
             5,
